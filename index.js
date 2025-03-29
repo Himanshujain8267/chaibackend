@@ -29,6 +29,9 @@ app.get('/hloeveryone',(req,res)=>{
 app.get('/github' , (req , res)=>{
 res.json(githubdata)
 })
+app.get('/githubsecond' , (req , res)=>{
+    res.send("hlo everyone")
+    })
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${port}`)
 })
